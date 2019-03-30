@@ -8,6 +8,9 @@ Code:
 
 
 min_height = dist.cdf(177.8) # 5'10" = 178.80 cm
+
 max_height = dist.cdf(185.42) # 6'1" = 185.42 cm
+
 eligible_blue_men_percentage = max_height - min_height
+
 eligible_blue_men_percentage
