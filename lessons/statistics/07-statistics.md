@@ -86,14 +86,24 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The odds that Elvis was an identical twin, given that he had a twin of the same sex, is 5/11 or 45.45%. Below is the work I used to compute this using Bayes's theorem:
+
+>> p(Fraternal) = probability of being a fraternal twin = 1/125
+>> p(Identical) = probability of being an identical twin = 1/300
+>> p(Twin) = probability of being a twin = 1/125 + 1/300 = 17/1,500
+>> p(Same-sex Twin) = probability of being a twin of the same sex = 1/250 + 1/300 = 11/1,500
+>> Note: this is because fraternal twins have a 50% likelihood of being different sexes (i.e. one boy and one girl)
+
+>> Bayes's Theorem states:
+>> p(Identical|Same-sex Twin) = ( p(Identical) * p(Same-sex Twin|Identical) ) / p(Same-sex Twin)
+>> p(Identical|Same-sex Twin) = ( (1/300) * 1 ) / (11/1,500) = 5/11 = 45.45%
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist statistics is based on the belief that only repeatable random events have probabilities, which are equal to the long-term frequency of occurrence of these events. Bayesian statistics, on the other hand, allows the use of probabilities to represent the uncertainty of non-repeatable events, like how likely a specific drug is to get FDA approval. Bayesians use incremental information and Bayes's theorem to update and improve their view of the probability of a specific outcome, while frequentists would not. If one couldn't observe or simulate the long-term frequency of an uncertainty, frequentists would not attempt to assign a probability to it.
 
 ---
 
